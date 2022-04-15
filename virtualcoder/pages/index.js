@@ -23,15 +23,6 @@ export default function Home() {
         <meta name="keywords" content="An interactive puzzle game" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <script src='/sc.js' strategy="lazyOnload"> </script> */}
-      {/* <nav className={styles.mainNav}>
-        <ul>
-          <Link href='/'><a><li>Home</li></a></Link>
-          <Link href='/about'><a><li>About</li></a></Link>
-          <Link href='/hackathons'><a><li>Hackathons</li></a></Link>
-          <Link href='/projects'><a><li>Projects</li></a></Link>
-        </ul>
-      </nav> */}
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -45,7 +36,6 @@ export default function Home() {
         </p>
 
         <div className="game">
-        {/* <div className={`${styles2.con} ${styles1.con}`}> */}
         {/* <div className={styles1.con}> */}
           <div className="gameItem">
             <h1>An Interactive Puzzle Game</h1>
@@ -60,8 +50,7 @@ export default function Home() {
             <p>It teaches programming principles and introduces JavaScript using a block-based programming approach.</p>
           </div>
         </div>
-
-       
+      
       </main>
 
       <footer className={styles.footer}>

@@ -127,6 +127,11 @@
   color: black;
   font-size: 18px;
   letter-spacing: 2px;
+  background-color: rgba(218, 213, 213, 0.268);
+}
+
+.mainNav ul li:hover{
+  color: red;
 }
 
 .myimg{
