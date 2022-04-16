@@ -2,6 +2,8 @@ import React from 'react'
 import {useRouter} from 'next/router'
 import styles from '../../styles/AboutDec.module.css'
 
+// Find the file corresponding to Slug 
+// Populate them inside the page
 const slug = () => {
     const router = useRouter();
     const {slug} = router.query;

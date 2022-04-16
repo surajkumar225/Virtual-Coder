@@ -24,7 +24,6 @@ export default async function handler(req, res) {
   //     console.log(item)
   //     fs.readFile(('aboutdata/' + item), (d)=> {
   //       moreaboutus.push(d)
-
   //     })
   //   })
   //   res.status(200).json(moreaboutus)
