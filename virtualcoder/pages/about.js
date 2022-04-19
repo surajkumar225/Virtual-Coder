@@ -6,13 +6,15 @@ import Link from 'next/link';
 // Iterate through them and display them
 const About = () => {
   const [about, getabout] = useState([]);
+
   useEffect(()=>{
     console.log("UseEffect is running");
     fetch('http://localhost:3000/api/about').then((a)=>{
       return a.json(); })
       .then((parsed)=> {
         console.log(parsed)
-        getabout(parsed)     
+        getabout(parsed);
+
     })
   }, [])
   return (

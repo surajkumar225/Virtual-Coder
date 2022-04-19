@@ -9,23 +9,12 @@ export default async function handler(req, res) {
 
   for (let index = 0; index < data.length; index++) {
     const item = data[index];
-    
+   
         console.log(item)
         myfile = await fs.promises.readFile(('aboutdata/' + item), 'utf-8')
-        moreaboutus.push(JSON.parse(myfile))
+        // moreaboutus.push(JSON.parse(myfile))
+        moreaboutus.push(myfile))
   }
-
     res.status(200).json(moreaboutus)
-
-  // fs.promises.readdir("aboutdata", (err, data)=> {
-  //   console.log(data);
-  //   let moreaboutus = [];
-  //   data.forEach((item)=> {
-  //     console.log(item)
-  //     fs.readFile(('aboutdata/' + item), (d)=> {
-  //       moreaboutus.push(d)
-  //     })
-  //   })
-  //   res.status(200).json(moreaboutus)
-  // })
+    
 }
