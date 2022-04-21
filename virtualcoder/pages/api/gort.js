@@ -12,8 +12,7 @@ export default async function handler(req, res) {
    
         console.log(item)
         myfile = await fs.promises.readFile(('aboutdata/' + item), 'utf-8')
-        // moreaboutus.push(JSON.parse(myfile))
-        moreaboutus.push(myfile))
+        moreaboutus.push(JSON.parse(myfile))
   }
     res.status(200).json(moreaboutus)
     
