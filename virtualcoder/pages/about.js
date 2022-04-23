@@ -13,8 +13,7 @@ const About = () => {
       return a.json(); })
       .then((parsed)=> {
         console.log(parsed)
-        getabout(parsed);
-
+        getabout(parsed);       
     })
   }, [])
   return (
